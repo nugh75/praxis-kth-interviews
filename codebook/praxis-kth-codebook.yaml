@@ -1,0 +1,62 @@
+version: "0.1-draft"
+date: "2026-05-29"
+status: "draft"
+base_codebook: "PRAXIS codebook v1.1, 2026-04-21"
+study: "PRAXIS KTH Interviews"
+
+dimensions:
+  P:
+    label: "Practice patterns"
+    definition: "Concrete uses of GenAI, tools, tasks, prompts, workflows, and contexts of use."
+    kth_candidate_subcodes:
+      P-KTH1:
+        label: "Research workflow integration"
+        definition: "Use of GenAI in research workflows such as literature scanning, coding, analysis support, drafting, review preparation, grant writing, documentation, or planning."
+      P-KTH2:
+        label: "Supervision and doctoral work"
+        definition: "Use of GenAI in doctoral supervision, thesis planning, supervisor feedback, doctoral coursework, or independent research training."
+  R:
+    label: "Readiness beliefs"
+    definition: "Perceived practical and theoretical competence, including validation and prompting confidence."
+    kth_candidate_subcodes: {}
+  A:
+    label: "Adequacy of support"
+    definition: "Perceived adequacy of institutional, peer, technical, pedagogical, or supervisory support."
+    kth_candidate_subcodes:
+      A-KTH1:
+        label: "Institutional rule clarity"
+        definition: "Perceived clarity or ambiguity of KTH-level, school-level, department-level, or course-level rules about GenAI."
+      A-KTH2:
+        label: "Approved infrastructure and tool access"
+        definition: "Availability, absence, or uneven access to sanctioned tools, secure platforms, licenses, or institutional infrastructure."
+  X:
+    label: "eXpectations"
+    definition: "Expected changes in teaching, learning, assessment, research, supervision, and academic work."
+    kth_candidate_subcodes:
+      X-KTH1:
+        label: "Assessment redesign"
+        definition: "Expectation that exams, assignments, oral assessment, project work, or thesis evaluation must change because of GenAI."
+  I:
+    label: "Interpersonal and Institutional trust"
+    definition: "Trust in AI systems, institutional governance, tool providers, students, teachers, supervisors, and peers."
+    kth_candidate_subcodes:
+      I-KTH1:
+        label: "Trust in institutional governance"
+        definition: "Trust or distrust in KTH, departments, programs, or course teams to manage GenAI responsibly."
+  S:
+    label: "Skepticisms"
+    definition: "Concerns, resistance, doubts, perceived risks, and boundaries of appropriate use."
+    kth_candidate_subcodes:
+      S-KTH1:
+        label: "Research integrity and authorship"
+        definition: "Concerns about authorship, plagiarism, hidden AI use, reproducibility, responsibility for claims, or integrity in research outputs."
+      S-KTH2:
+        label: "Confidentiality and data protection"
+        definition: "Concerns about entering unpublished research, student data, interview data, personal information, or confidential material into AI tools."
+
+decision_rule:
+  - "First test every segment against the original PRAXIS codebook."
+  - "Use KTH candidate subcodes only when the existing codebook is not precise enough."
+  - "Promote a candidate subcode only after documenting the evidence in logs/codebook-decision-log.md."
+  - "Do not infer attitudes beyond the transcript segment."
+

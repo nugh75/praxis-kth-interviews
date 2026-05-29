@@ -1,0 +1,31 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Never commit identifiable fieldwork data.
+data/raw-audio/*
+data/raw-transcripts/*
+data/processed/*
+!data/raw-audio/.gitkeep
+!data/raw-transcripts/.gitkeep
+!data/processed/.gitkeep
+
+# Derived qualitative material may be committed only after de-identification.
+corpus/*
+!corpus/.gitkeep
+
+# Common interview/media formats.
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.aac
+*.flac
+
+# Local exports and working notes.
+exports/
+tmp/
+local-notes/
